@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
-import { Context } from "../../context/Context";
-
+import { Context } from "../../context/context";
 
 const Main = () => {
   const {
@@ -22,7 +21,6 @@ const Main = () => {
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
-        
         {showResult ? (
           <div className="result">
             <div className="result-title">
@@ -30,7 +28,7 @@ const Main = () => {
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
-             <img src={assets.black_dot} alt="" /> 
+              <img src={assets.black_dot} alt="" />
               {loading ? (
                 <div className="loader">
                   <hr className="animated-bg" />
