@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
-// import { Context } from "../../context/context.jsx";
-import { Context } from "../../context/context";
+import { Context } from "./context/context.jsx";
+
 
 const Main = () => {
   const {
